@@ -1,0 +1,18 @@
+<html lang="en">
+
+<%- include header %>
+<script>
+	function submit(){
+		alert("Thanks for Voting...");
+		window.location("/")
+	}
+</script>
+<div class="jumbotron">
+	<h1 style="color:blanchedalmond;">Welcome Voting</h1>
+	<p>Select the candidate</p>
+	<input type="radio" name="select" required/><label >Venkat</label><br />
+	<input type="radio" name="select"/><label>Sridharan</label><br />
+	<input type="submit" placeholder="Submit" onclick="submit()"/>
+</div>	
+
+<%- include footer %>
